@@ -1,0 +1,260 @@
+
+/* basic style*/
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* content style*/
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5px;
+	gap: 20px;
+    font-size: larger;
+    color: #141413;
+}
+/* image style*/
+.img {
+    border-radius: 50%;
+	width: 100%;
+	max-width: 150px;
+	height: auto;
+}
+/* button style*/
+.home_page {
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor:grab;
+    text-align: right;
+    list-style-type: style none; 
+}
+
+.header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+}
+button:hover {
+    background-color: #6dabec;
+}
+
+/* contact section style*/
+.h2 {
+	text-align:left;
+}
+
+
+/* header style*/
+header{
+    background-color: #74858f;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("back.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/* main style*/
+main {
+padding:10px;
+background-color:#e3dcdc;
+}
+
+/* row style*/
+.row {
+display: flex;
+flex-wrap:wrap;	
+justify-content:center;
+margin: 5px 0;
+}
+
+/* columm style*/
+.column {
+flex:1;
+padding: 10px;
+max-width: 33.33%;
+height:200px;
+}
+
+/* column's child style*/
+.column:first-child {
+background-color: #e6dfc4;
+font-family: monospace;
+}
+.column:last-child {
+margin: 20px;
+background-color: burlywood;
+font-family: fangsong;
+}
+
+/* educatiion section style*/
+.education{
+color: #35424a;
+text-align:center;
+}
+
+/* second heaing style*/
+h2 {
+color: #35424a;
+}
+
+/* list style*/
+ul {
+list-style-type: square;
+padding-left: 20px;
+background-color:#fed83d;
+}
+ul li{
+font-family:fangsong;
+}
+
+/* HR style*/
+.hr{
+border: dashed;
+}
+
+/* column (for skills,interests,goals,other) style*/
+.column 2{
+flex:1;
+padding: 10px;
+max-width: 25%;
+height:200px;
+}
+/* paragraph (for skills,interests,goals,other) style*/
+.paragraph {
+font-family: sans-serif;
+background-color: darkgrey;
+padding: inherit;
+}
+
+                                            /*projects section*/
+
+.header_second{
+    text-align: center;
+    
+}
+
+#projects {
+    display:flex;
+    margin: 20px 0 40px;
+    cursor: context-menu;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.projects_link {
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    color: navy;
+} 
+
+.projects_link::after{
+    content: "";
+    position: absolute; 
+    background: #74858f;
+}
+.projects_link.active_link::after {
+    width: 50%;
+}
+.projects_content {
+    margin: 15px 0 15px;
+    display: none;
+}
+.projects_content.active_content{
+    display: block;
+}
+
+
+                                        /*services section*/
+
+#services{
+    padding: 30px 0;
+}
+.services_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+
+                                            /* connect*/
+
+
+.header_third{
+    text-align: center;
+}
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    width: 120px; /* Adjusted for better alignment */
+    margin-right: 5px;
+    background-color: #37e437;
+    justify-content: center;
+}
+
+input, select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.incorrect label {
+    background-color: #ffcccc; 
+}
+
+#error_message {
+    color: red;
+    margin-bottom: 10px;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+.column {
+    max-width: 100%;
+}
+}
